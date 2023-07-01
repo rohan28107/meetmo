@@ -20,33 +20,36 @@ const Navbar = () => {
 
             <div className="hidden sm:-my-px sm:ml-6 sm:flex">
               <a
-                href="#"
+                href="/"
                 className="ml-4 px-3 py-2 mt-2 rounded-md text-sm font-medium bg-[#272C34] h-12 w-12 text-white hover:text-gray-300"
               >
                 <Image 
                   src='/assets/icons/navbar/patcher.png'
+                  alt='patcher'
                   width={20}
                   height={20}
                   className='my-2 h-6 w-6'
                 />
               </a>
               <a
-                href="#"
+                href="/mixer"
                 className="ml-4 px-3 py-2 rounded-md text-sm font-medium text-white hover:text-gray-300"
               >
                 <Image 
                   src='/assets/icons/navbar/editor.png'
+                  alt='editor'
                   width={20}
                   height={20}
                   className='my-4'
                 />
               </a>
               <a
-                href="#"
+                href="/patcher"
                 className="ml-4 px-3 py-2 rounded-md text-sm font-medium text-white hover:text-gray-300"
               >
                 <Image 
                   src='/assets/icons/navbar/mixer.png'
+                  alt='mixer'
                   width={20}
                   height={20}
                   className='my-4'
@@ -57,7 +60,7 @@ const Navbar = () => {
           <div className='ml-8'>
             <p className='font-montserrat text-base font-bold leading-5 tracking-normal text-center text-gray-400 text-xs flex gap-2 mt-6'>
               New project 
-              <span class="text-gray-400 inline-block ml-1 w-2 h-2 mt-1 border-b-2 border-r-2 transform rotate-45"></span>
+              <span className="text-gray-400 inline-block ml-1 w-2 h-2 mt-1 border-b-2 border-r-2 transform rotate-45"></span>
             </p>
           </div>
           <div className="flex items-center">
@@ -87,7 +90,7 @@ const Navbar = () => {
                 />
                 <p className='text-white text-sm flex gap-2 mt-1'>
                   <span>Johan Romero</span>
-                  <span class="inline-block ml-1 w-2 h-2 mt-1 border-b-2 border-r-2 transform rotate-45"></span>
+                  <span className="inline-block ml-1 w-2 h-2 mt-1 border-b-2 border-r-2 transform rotate-45"></span>
                 </p>
               </button>
               {isDropdownOpen && (

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Mixer = () => {
   return (
-    <div>Mixer</div>
+    <h1 className='text-white '>Mixer</h1>
   )
 }
 

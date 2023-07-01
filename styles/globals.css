@@ -16,8 +16,13 @@
   }
 }
 
+/* app {
+  width: 100%;
+  display: flex;
+} */
+
 body {
-  background-color: #1F1F23;
+  background-color: #1F1F23; 
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
