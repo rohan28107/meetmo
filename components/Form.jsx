@@ -24,14 +24,16 @@ const Form = () => {
 
 
   return (
-    <div className="bg-gray-800  flex items-center justify-center mt-[-120]">
+    <div className="flex items-center justify-center mt-[-130]">
       {/* min-h-screen */}
-      <div className="bg-gray-800 px-8 py-1 rounded-lg">
-        <h1 className="text-white text-2xl mb-2">Form Component</h1>
+      <div className="px-8 rounded-lg">
+        <h1 className="text-white text-lg">Repellat voluptates corrupti</h1>
+        <p className="text-white text-xs mb-2">magnam veniam voluptatem</p>
         <div className='w-full'>
           <input
             type="text"
-            className="bg-transparent w-full border-2 border-grey-800 text-white mb-2 focus:outline-none"
+            className="bg-transparent w-full border-2 p-1 pl-2 border-grey-800 text-white mb-2 focus:outline-none"
+            style={{ border: '2px solid #39404B' }}
             placeholder="Node name"
             value={nodeName}
             onChange={(e) => setNodeName(e.target.value)}
@@ -39,44 +41,39 @@ const Form = () => {
           <br />
           <input
             type="text"
-            className="bg-transparent w-full border-2 border-grey-100 text-white mb-2 focus:outline-none"
-            placeholder="dicta amet consequatur"
-            value={dicta}
-            onChange={(e) => setDicta(e.target.value)}
-          />
-          <br />
-          <input
-            type="text"
-            className="bg-transparent w-full border-2 border-grey-100 text-white mb-2 focus:outline-none"
+            className="bg-transparent w-full border-2 p-1 pl-2  border-grey-100 text-white mb-2 focus:outline-none"
+            style={{ border: '2px solid #39404B' }}
             placeholder="eos et rem"
             value={eosEtRem}
             onChange={(e) => setEosEtRem(e.target.value)}
           />
         </div>
         
-        <div className="flex gap-2 items-center mb-4">
+        <div className="flex gap-2 items-center mb-2">
           <input
             type="text"
-            className="bg-transparent border-2 border-grey-100 text-white mb-2 focus:outline-none"
+            className="bg-transparent border-2 p-1 pl-2  border-grey-100 text-white mb-2 focus:outline-none"
+            style={{ border: '2px solid #39404B' }}
             placeholder="dicta amet consequatur"
             value={dicta}
             onChange={(e) => setDicta(e.target.value)}
           />
           <input
             type="text"
-            className="bg-transparent border-2 border-grey-100 text-white mb-2 focus:outline-none"
+            className="bg-transparent border-2 p-1 pl-2  border-grey-100 text-white mb-2 focus:outline-none"
+            style={{ border: '2px solid #39404B' }}
             placeholder="eos et rem"
             value={eosEtRem}
             onChange={(e) => setEosEtRem(e.target.value)}
           />
         </div>
-        <div className="flex justify-between items-center mb-4">
+        <div className="flex justify-between items-center mb-1 mt-[-4]">
           <label htmlFor="toggle" className="text-white mr-2">
             sit nihil expedita
           </label>
           <button
             id="toggle"
-            className={`w-12 h-6 rounded-full focus:outline-none ${
+            className={`w-10 h-5 rounded-full focus:outline-none  ${
               sitNihilExpedita
                 ? 'bg-gradient-to-r from-blue-500 to-cyan-500'
                 : 'bg-gray-400'
@@ -90,7 +87,7 @@ const Form = () => {
             />
           </button>
         </div>
-        <div>
+        <div >
           <Slider text="Earum dolorem" defaultValue={randomValue1} />
           <Slider text="est explicabo dolore" defaultValue={randomValue2} />
           <Slider text="optio in quisquam" defaultValue={randomValue3} />

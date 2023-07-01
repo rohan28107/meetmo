@@ -13,13 +13,12 @@ import ReactFlow, {
 } from "reactflow";
 
 import "reactflow/dist/base.css";
-import Mediaplayer from "./Mediaplayer";
-import Form from "./Form";
 
 const nodeDefaults = {
   sourcePosition: Position.Right,
   targetPosition: Position.Left
 };
+
 
 const initialNodes = [
   {
@@ -70,7 +69,7 @@ const initialEdges = [
   {
     id: "e2-3",
     source: "2",
-    target: "3"
+    target: "3",
   },
   {
     id: "e3-4",
@@ -88,33 +87,30 @@ const Flow = () => {
     []
   );
 
+  const edgestyles = {
+    border: "6px solid",
+    borderImageSource: "linear-gradient(80.15deg, #3D44D9 27.01%, #01C5FF 113.04%)",
+    borderImageSlice: 1,
+  };
+
+  
+
   return (
-  //   <ReactFlow
-  //     nodes={nodes}
-  //     edges={edges}
-  //     onNodesChange={onNodesChange}
-  //     onEdgesChange={onEdgesChange}
-  //     onConnect={onConnect}
-  //     style={{ backgroundColor: '#272C34' }}
-  //     fitView
-  //   >
-  //   <Background />
-  //   <Controls />
-  //   {/* <MiniMap /> */}
-  // </ReactFlow>
+    <div style={{  position:'absolute', left: '80px', top: '150px', zIndex: 200, height: '550px', width: '900px'}}>
       <ReactFlow
-        nodes={nodes}
-        edges={edges}
-        onNodesChange={onNodesChange}
-        onEdgesChange={onEdgesChange}
-        onConnect={onConnect}
-        style={{ backgroundColor: '#272C34' }}
-        fitView
-      >
-        <Background />
-        <Controls />
-        {/* <MiniMap /> */} 
-    </ReactFlow>
+            nodes={nodes}
+            edges={edges}
+            onNodesChange={onNodesChange}
+            onEdgesChange={onEdgesChange}
+            onConnect={onConnect}
+            edgeStyles={edgestyles}
+            fitView
+          >
+            {/* <Background /> */}
+            <Controls />
+      </ReactFlow>
+      </div>
+      
   );
 };
 

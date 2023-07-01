@@ -10,7 +10,7 @@ const secondnav = [
 
 const Secondnav = () => {
   return (
-    <div className='flex bg-[#303640] max-w-8xl ml-8 mx-auto px-4 sm:px-6 lg:px-8 relative r-5'>
+    <div className='flex bg-[#303640] max-w-8xl ml-8 mx-auto px-4 sm:px-6 lg:px-8  r-5'>
         <ul className="flex flex-row justify-between h-16">
         {secondnav.map((nav) => (
           <li className="flex p-4 `${nav.name === 'folders' ? 'bg-gradient-to-r from-blue-400 to-indigo-700' : ''}`">
