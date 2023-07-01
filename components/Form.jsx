@@ -7,6 +7,7 @@ const Form = () => {
   const [nodeName, setNodeName] = useState('');
   const [dicta, setDicta] = useState('');
   const [eosEtRem, setEosEtRem] = useState('');
+  const [eosEtRem2, setEosEtRem2] = useState('');
   const [sitNihilExpedita, setSitNihilExpedita] = useState(true);
   const [rerum, setRerum] = useState('');
 
@@ -63,8 +64,8 @@ const Form = () => {
             className="bg-transparent border-2 p-1 pl-2  border-grey-100 text-white mb-2 focus:outline-none"
             style={{ border: '2px solid #39404B' }}
             placeholder="eos et rem"
-            value={eosEtRem}
-            onChange={(e) => setEosEtRem(e.target.value)}
+            value={eosEtRem2}
+            onChange={(e) => setEosEtRem2(e.target.value)}
           />
         </div>
         <div className="flex justify-between items-center mb-1 mt-[-4]">
