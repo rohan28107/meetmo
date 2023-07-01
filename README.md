@@ -1,6 +1,25 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# MeetMO Assignment
+
+## Technologies Used: 
+<uL>
+  <li>
+    Nextjs
+  </li>
+  <li>TailwindCSS</li>
+  <li>ReactFlow</li>
+</uL>
+
+## Screenshot:
+
+![meetmo](https://github.com/rohan28107/meetmo/assets/112626910/b05b5cd2-fe09-4629-bcdd-834a14f8e172)
+
+
+
+
+
+##
 
 First, run the development server:
 
